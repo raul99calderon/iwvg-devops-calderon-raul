@@ -26,8 +26,8 @@ class SearchesTest {
 
     @Test
     void testFindFractionDivisionByUserId() {
-        assertEquals(Optional.of(new Fraction(-48,60)),new Searches()
-                .findFractionDivisionByUserId("3"));
+        assertEquals(Optional.of(new Fraction(0,0)),new Searches()
+                .findFractionDivisionByUserId("6"));
     }
 
     @Test
