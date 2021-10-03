@@ -1,5 +1,6 @@
 package es.upm.miw.iwvg_devops.searches;
 
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class Searches {
@@ -17,5 +18,13 @@ public class Searches {
                         .stream())
                 .filter(Fraction::isNegative)
                 .map(Fraction::decimal);
+    }
+
+    public Optional<Fraction> findFractionDivisionByUserId(String id) {
+        return new UsersDatabase().findAll()
+                .filter(user -> id.equals(user.getId()))
+                .flatMap(user -> user.getFractions()
+                        .stream())
+                .reduce(Fraction::divide);
     }
 }
