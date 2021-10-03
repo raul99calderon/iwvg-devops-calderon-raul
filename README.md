@@ -17,3 +17,4 @@
 [![DevOps](https://github.com/raul99calderon/iwvg-devops-calderon-raul/actions/workflows/test-sonar.yml/badge.svg)](https://github.com/raul99calderon/iwvg-devops-calderon-raul/actions/workflows/test-sonar.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=raul99calderon_iwvg-devops-calderon-raul&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=raul99calderon_iwvg-devops-calderon-raul)
 [![BCH compliance](https://bettercodehub.com/edge/badge/raul99calderon/iwvg-devops-calderon-raul?branch=develop)](https://bettercodehub.com/)
+[![Heroku broken](https://iwvg-devops-calderon-raul.herokuapp.com/system/version-badge)](https://iwvg-devops-calderon-raul.herokuapp.com/swagger-ui.html)
