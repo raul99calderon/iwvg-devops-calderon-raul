@@ -1,4 +1,4 @@
-package searches;
+package es.upm.miw.iwvg_devops.searches;
 
 import java.util.ArrayList;
 import java.util.List;

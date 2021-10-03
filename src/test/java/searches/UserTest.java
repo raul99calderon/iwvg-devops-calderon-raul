@@ -1,5 +1,7 @@
 package searches;
 
+import es.upm.miw.iwvg_devops.searches.Fraction;
+import es.upm.miw.iwvg_devops.searches.User;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

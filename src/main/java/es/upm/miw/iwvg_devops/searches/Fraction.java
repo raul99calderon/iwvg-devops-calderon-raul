@@ -1,4 +1,4 @@
-package searches;
+package es.upm.miw.iwvg_devops.searches;
 
 public class Fraction {
     private int numerator;
