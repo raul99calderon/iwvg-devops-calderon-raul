@@ -27,4 +27,12 @@ public class Searches {
                         .stream())
                 .reduce(Fraction::divide);
     }
+
+    public Stream<String> findUserFamilyNameBySomeImproperFraction() {
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions()
+                        .stream()
+                        .anyMatch(Fraction::isNotProper))
+                .map(User::getFamilyName);
+    }
 }

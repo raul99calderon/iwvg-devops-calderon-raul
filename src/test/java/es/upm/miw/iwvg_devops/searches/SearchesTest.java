@@ -12,7 +12,7 @@ class SearchesTest {
 
     @Test
     void testFindUserNameBySomeImproperFraction() {
-        assertEquals(List.of("Oscar","Ana","Oscar","Antonio","Paula"),new Searches()
+        assertEquals(List.of("Óscar","Ana","Óscar","Antonio","Paula"),new Searches()
                 .findUserNameBySomeImproperFraction()
                 .collect(Collectors.toList()));
     }
@@ -28,5 +28,12 @@ class SearchesTest {
     void testFindFractionDivisionByUserId() {
         assertEquals(Optional.of(new Fraction(-48,60)),new Searches()
                 .findFractionDivisionByUserId("3"));
+    }
+
+    @Test
+    void testFindUserFamilyNameBySomeImproperFraction() {
+        assertEquals(List.of("Fernández","Blanco","López","Blanco","Torres"),new Searches()
+                .findUserFamilyNameBySomeImproperFraction()
+                .collect(Collectors.toList()));
     }
 }
