@@ -49,6 +49,10 @@ public class Fraction {
         return false;
     }
 
+    public boolean isNegative() {
+        return this.decimal() < 0;
+    }
+
     public Fraction addition(Fraction fraction) {
         int mcm = ArithmeticUtils.mcm(this.getDenominator(),fraction.getDenominator());
         return new Fraction(mcm/this.getDenominator() * this.getNumerator() + (mcm/fraction.getDenominator()) * fraction.getNumerator(),mcm);
